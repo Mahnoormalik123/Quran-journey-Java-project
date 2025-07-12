@@ -10,11 +10,11 @@ public class DatabaseConnection {
             String password = "573549";
 
             Connection conn = DriverManager.getConnection(url, username, password);
-            System.out.println("✅ Connection successful!");
+            System.out.println("Connection successful!");
             return conn;
 
         } catch (SQLException e) {
-            System.out.println("❌ Connection failed.");
+            System.out.println(" Connection failed.");
             e.printStackTrace();
             return null;
         }
